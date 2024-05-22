@@ -9,3 +9,9 @@ li,
 a {
   color: #444;
 }
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: #000;
+}

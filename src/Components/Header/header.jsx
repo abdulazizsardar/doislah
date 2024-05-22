@@ -1,3 +1,5 @@
+import switcher from "../../Helpers/switcher";
+
 const Header = () => {
   return (
     <>
@@ -6,33 +8,66 @@ const Header = () => {
       hite md:text-large bg-dark"
       >
         <div className="Logo">
-          <a href="#">Logo</a>
+          <a
+            onClick={(e) => {
+              switcher("home", "", "", e);
+            }}
+          >
+            Logo
+          </a>
         </div>
         <div className="menu-section">
           <ul className="flex items-center gap-5">
             <li>
-              <a href="#">হোম</a>
+              <a
+                onClick={(e) => {
+                  switcher("home", "", "", e);
+                }}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">ইসলাম</a>
+              <a
+                onClick={(e) => {
+                  switcher("islam", "", "", e);
+                }}
+              >
+                islam{" "}
+              </a>
             </li>
             <li>
-              <a href="#">ইবাদত</a>
+              <a
+                onClick={(e) => {
+                  switcher("ibadat", "", "", e);
+                }}
+              >
+                ibadat
+              </a>
             </li>
             <li>
-              <a href="#">আত্মশুদ্ধি</a>
+              <a
+                onClick={(e) => {
+                  switcher("attoshuddhi", "", "", e);
+                }}
+              >
+                attoshuddhi
+              </a>
             </li>
             <li>
-              <a href="#">ইবাদত</a>
-            </li>
-            <li>
-              <a href="#">অন্যান্য</a>
+              <a
+                onClick={(e) => {
+                  switcher("others", "", "", e);
+                }}
+              >
+                others
+              </a>
             </li>
             <li></li>
           </ul>
         </div>
         <div className="flex gap-2">
-          <a href="">
+          <a>
             <svg
               width="15"
               height="16"
@@ -46,7 +81,7 @@ const Header = () => {
               ></path>
             </svg>
           </a>
-          <a href="">
+          <a>
             <svg
               width="15"
               height="16"
@@ -60,7 +95,7 @@ const Header = () => {
               ></path>
             </svg>
           </a>
-          <a href="">
+          <a>
             <svg
               width="15"
               height="16"
