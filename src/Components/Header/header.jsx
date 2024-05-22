@@ -8,60 +8,27 @@ const Header = () => {
       hite md:text-large bg-dark"
       >
         <div className="Logo">
-          <a
-            onClick={(e) => {
-              switcher("home", "", "", e);
-            }}
-          >
-            Logo
-          </a>
+          <a href="#">Logo</a>
         </div>
         <div className="menu-section">
           <ul className="flex items-center gap-5">
             <li>
-              <a
-                onClick={(e) => {
-                  switcher("home", "", "", e);
-                }}
-              >
-                Home
-              </a>
+              <a href="#">হোম</a>
             </li>
             <li>
-              <a
-                onClick={(e) => {
-                  switcher("islam", "", "", e);
-                }}
-              >
-                islam{" "}
-              </a>
+              <a href="#">ইসলাম</a>
             </li>
             <li>
-              <a
-                onClick={(e) => {
-                  switcher("ibadat", "", "", e);
-                }}
-              >
-                ibadat
-              </a>
+              <a href="#">ইবাদত</a>
             </li>
             <li>
-              <a
-                onClick={(e) => {
-                  switcher("attoshuddhi", "", "", e);
-                }}
-              >
-                attoshuddhi
-              </a>
+              <a href="#">আত্মশুদ্ধি</a>
             </li>
             <li>
-              <a
-                onClick={(e) => {
-                  switcher("others", "", "", e);
-                }}
-              >
-                others
-              </a>
+              <a href="#">ইবাদত</a>
+            </li>
+            <li>
+              <a href="#">অন্যান্য</a>
             </li>
             <li></li>
           </ul>

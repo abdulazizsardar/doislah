@@ -10,5 +10,6 @@ export const root = ReactDOM.createRoot(document.getElementById("root"));
 export const footer = ReactDOM.createRoot(document.getElementById("footer"));
 
 header.render(<Header />);
-App();
+
 footer.render(<Footer />);
+App();
