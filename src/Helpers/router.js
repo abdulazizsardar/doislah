@@ -3,23 +3,47 @@ import { root } from "..";
 const router = (page, arg) => {
   switch (page) {
     case "home":
-      piston(<>I am Home</>);
+      piston(
+        <>
+          <center>I am Home</center>
+        </>
+      );
       break;
     case "ibadat":
-      piston(<>I am ibadat</>);
+      piston(
+        <>
+          <center> I am ibadat </center>
+        </>
+      );
       break;
     case "others":
-      piston(<>I am others</>);
+      piston(
+        <>
+          <center>I am others</center>
+        </>
+      );
       break;
     case "islam":
-      piston(<>I am islam</>);
+      piston(
+        <>
+          <center>I am islam</center>
+        </>
+      );
       break;
     case "attoshuddhi":
-      piston(<>I am attoshuddhi</>);
+      piston(
+        <>
+          <center>I am attoshuddhi</center>
+        </>
+      );
       break;
 
     default:
-      piston(<>Not found</>);
+      piston(
+        <>
+          <center>Not found</center>
+        </>
+      );
 
       break;
   }
