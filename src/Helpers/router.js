@@ -1,4 +1,5 @@
 import { root } from "..";
+import SinglePost from "../Components/Single Post/singlePost";
 
 const router = (page, arg) => {
   switch (page) {
@@ -6,6 +7,13 @@ const router = (page, arg) => {
       piston(
         <>
           <center>I am Home</center>
+        </>
+      );
+      break;
+    case "sp":
+      piston(
+        <>
+          <SinglePost/>
         </>
       );
       break;
