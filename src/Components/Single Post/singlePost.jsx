@@ -18,16 +18,8 @@ const SinglePost = () => {
         },
         {
             type: "list",
-            title: "omuk list",
-            description: "ei list e ami emon jinish likhbo, ja ami nijeo jani na ki.",
-            items: [
-                "Salat",
-                "Sawom",
-                "Hajj",
-                "Jakat",
-                "Tawhid"
-
-            ]
+            number: "1",
+            description: "রাসূল সা. ইরশাদ করেন: “আল্লাহ তাআলা তোমাদের উপর রমযান শরীফের রোযা ফরয করেছেন।আর রাতের নামায অর্থাৎ, তারাবীহকে আমি তোমাদের জন্য সুন্নত করেছি। সুতরাং যে ব্যক্তি ঈমানী প্রেরণা ও সওয়াবের উদ্দেশ্যে এ মাসে রোযা রাখবে এবং তারাবীহ নামায পড়বে, সে ব্যক্তি গুনাহ থেকে এরূপ মুক্ত হয়ে যাবে যেন আজই তার মা তাকে প্রসব করেছেন।” (সুনানে নাসায়ী,হাদীস নং:২২১০)",
         },
         {
             type: "paragraph",
@@ -55,9 +47,12 @@ const SinglePost = () => {
             <div className='mt-6'>
                {
                 postData.map((item, index) => {
+                    //console.log(postRender(item))
                     return(postRender(item))
                 })
+                
                }
+               
             </div>
 
         </div>

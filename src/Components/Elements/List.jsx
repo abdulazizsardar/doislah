@@ -1,12 +1,15 @@
-const ListElement = (element) => {
-
-
+const ListElement = (e) => {
     return(
-        <div>
-        <p className='mt-6'>{element.content}</p>
-    </div>
-
+        <div class="doislah-blog-list">
+            <div class="quote-number">
+                {e.number}
+            </div>
+            <div class="quote-content">
+                <p>{e.description}</p>
+            </div>
+        </div>
     )
+
 }
 
-export default ListElement
+export default ListElement;

@@ -16,3 +16,19 @@ a {
 a:hover {
   color: #000;
 }
+
+.doislah-blog-list{
+	display:flex;
+}
+.doislah-blog-list .quote-number{
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 39px;
+	min-width: 39px;
+	height: 39px;
+	background: #24C030;
+	border-radius: 50%;
+	color: #fff;
+}
