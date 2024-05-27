@@ -16,7 +16,11 @@ a {
 a:hover {
   color: #000;
 }
+.active a{
+	transition: 0.2s ease-in-out;
+	color: #24C030 !important;
 
+}
 .doislah-blog-list{
 	display:flex;
 }

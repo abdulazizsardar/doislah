@@ -1,6 +1,18 @@
+import { useState } from "react";
 import switcher from "../../Helpers/switcher";
 
 const Header = () => {
+
+  const [active, setActive] = useState("home")
+
+const menuData = [
+  { name: "হোম", slug:"home"},
+  { name: "ইসলাম", slug:"islam"},
+  { name: "ইবাদত", slug:"ibadat"},
+  { name: "আত্মশুদ্ধি", slug:"attoshuddhi"},
+  { name: "অন্যান্য", slug:"others"},
+]
+
   return (
     <>
       <div
@@ -18,61 +30,22 @@ const Header = () => {
         </div>
         <div className="menu-section">
           <ul className="flex items-center gap-5">
-            <li>
-              <a
-                onClick={(e) => {
-                  switcher("home", "", "", e);
-                }}
-              >
-                হোম
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={(e) => {
-                  switcher("islam", "", "", e);
-                }}
-              >
-                ইসলাম
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={(e) => {
-                  switcher("ibadat", "", "", e);
-                }}
-              >
-                ইবাদত
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={(e) => {
-                  switcher("attoshuddhi", "", "", e);
-                }}
-              >
-                আত্মশুদ্ধি
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={(e) => {
-                  switcher("ibadat", "", "", e);
-                }}
-              >
-                ইবাদত
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={(e) => {
-                  switcher("others", "", "", e);
-                }}
-              >
-                অন্যান্য
-              </a>
-            </li>
-            <li></li>
+          {
+            menuData.map((e, k)=>{
+              return(
+                <li key={k} className={`text-large font-semibold ${active === e.slug ? "active" : ""}`}>
+                <a
+                  onClick={(k) => {
+                    switcher(e.slug, "", "", k);
+                    setActive(e.slug)
+                  }}
+                >
+                  {e.name}
+                </a>
+              </li>
+              )
+            })
+          }
           </ul>
         </div>
         <div className="flex gap-2">

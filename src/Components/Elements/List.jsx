@@ -1,13 +1,23 @@
 const ListElement = (e) => {
     return(
-        <div class="doislah-blog-list">
+        <>
+        {
+            e.content.map((e,k )=>{
+                return(
+                    <>
+                    <div class="doislah-blog-list mt-4">
             <div class="quote-number">
-                {e.number}
+                {k+1}
             </div>
             <div class="quote-content">
-                <p>{e.description}</p>
+                <p>{e}</p>
             </div>
         </div>
+                    </>
+                )
+            })
+        }
+        </>
     )
 
 }

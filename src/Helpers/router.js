@@ -1,5 +1,6 @@
 import { root } from "..";
 import SinglePost from "../Components/Single Post/singlePost";
+import { getPost } from "./request";
 
 const router = (page, arg) => {
   switch (page) {
@@ -10,12 +11,21 @@ const router = (page, arg) => {
         </>
       );
       break;
-    case "sp":
-      piston(
-        <>
-          <SinglePost/>
-        </>
-      );
+    case "posts":
+      getPost(arg[0]).then((e)=>{
+        piston(
+          <>
+           {SinglePost(e)}
+          </>
+        );
+      }).catch((e)=>{
+        piston(
+          <>
+           Not found
+          </>
+        );
+      })
+      
       break;
     case "ibadat":
       piston(

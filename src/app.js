@@ -6,4 +6,5 @@ const App = () => {
   switcher(page, path[2], path[3]);
 };
 
+
 export default App;

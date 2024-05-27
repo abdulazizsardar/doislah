@@ -7,7 +7,8 @@ const switcher = (url, pageTL, pageSl, event) => {
     event.preventDefault();
   }
   root.render(<Loader />);
-  window.history.pushState(null, null, url);
+  console.log(`${url}/${pageTL}`)
+  window.history.pushState(null, null, `../${url}/${pageTL}`);
   router(url, [pageTL, pageSl]);
 };
 export default switcher;
