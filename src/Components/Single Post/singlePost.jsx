@@ -1,11 +1,15 @@
 import { Avatar } from 'antd'
 import {ClockCircleOutlined, EyeOutlined, MessageOutlined} from "@ant-design/icons"
 import postRender from '../../Helpers/postRender'
+import ProgressBar from 'react-progressbar-circle';
+import ScrollProgress from '../Scroll Progress/progress';
+
 const SinglePost = (postData) => {
   
 
     return(
         <>
+    <ScrollProgress></ScrollProgress>
         <div className='w-2/5 mx-auto px-auto'>
             <img className='w-full my-16 ' src="https://doislah.com/wp-content/uploads/2022/08/Default-image-800x400.jpg"/>
            <a href='./categories/ibadat'> <span className='px-2 py-1 bg-green-500 text-sm  rounded text-white cursor-pointer'>Ibadat</span></a>
