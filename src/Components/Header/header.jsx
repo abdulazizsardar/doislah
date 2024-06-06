@@ -1,5 +1,6 @@
 import { useState } from "react";
 import switcher from "../../Helpers/switcher";
+import Logo from "../../logo.svg";
 
 const Header = () => {
 
@@ -25,7 +26,7 @@ const menuData = [
               switcher("home", "", "", e);
             }}
           >
-            Logo
+            <img src={Logo} alt="" />
           </a>
         </div>
         <div className="menu-section">

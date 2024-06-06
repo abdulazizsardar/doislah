@@ -1,4 +1,5 @@
 import { root } from "..";
+import HomeBanner from "../Components/Home Banner/homeBanner";
 import SinglePost from "../Components/Single Post/singlePost";
 import { getPost } from "./request";
 
@@ -6,9 +7,7 @@ const router = (page, arg) => {
   switch (page) {
     case "home":
       piston(
-        <>
-          <center>I am Home</center>
-        </>
+        <HomeBanner />
       );
       break;
     case "posts":
@@ -21,7 +20,7 @@ const router = (page, arg) => {
       }).catch((e)=>{
         piston(
           <>
-           Not found
+          <center> Not found</center>
           </>
         );
       })
@@ -30,7 +29,9 @@ const router = (page, arg) => {
     case "ibadat":
       piston(
         <>
-          <center> I am ibadat </center>
+          <center>
+            Ibadat
+          </center>
         </>
       );
       break;
